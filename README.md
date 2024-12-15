@@ -26,7 +26,7 @@ The *Farm Task* is a two-player game designed to study helping behaviors in dyna
 - **Backpack Capacity**: Storage limitations impact decisions about whose vegetables to prioritize.
 - **Visibility**: Players may see only their scores and energy levels or those of both players.
 
-!(static/farm task.png)
+![farm game]("static/farm task.png")
 
 ### Simple Tabular Q-Learning
 The **Simple Tabular Q-Learning** approach uses a single Q-table to represent the state-action values for both agents. Key details:
@@ -104,7 +104,7 @@ Q(s, a) ← Q(s, a) + α * (r + γ * E_{sa} [ max_{a'} Q(s', a') ] - Q(s, a))
 5. **Exploration vs. Exploitation**:
    - The agent starts by exploring the environment randomly (high exploration) and gradually shifts to exploitation (greedy behavior) by decreasing the epsilon parameter over time. Initially, ε = 1 (complete exploration) and it is reduced by 1% every 1,000 actions during training, ensuring a balance between exploration and exploitation.
 
-!(static/epsilon.png)
+![epsilon](static/epsilon.png)
 
 7. **Experience Replay**:
    - Both the Q-Network and the Opponent Network use experience replay to sample transitions from previous games. This technique reduces the correlation between consecutive experiences and stabilizes training.
