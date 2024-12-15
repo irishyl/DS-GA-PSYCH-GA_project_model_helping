@@ -26,7 +26,7 @@ The *Farm Task* is a two-player game designed to study helping behaviors in dyna
 - **Backpack Capacity**: Storage limitations impact decisions about whose vegetables to prioritize.
 - **Visibility**: Players may see only their scores and energy levels or those of both players.
 
-![farm game]("static/farm task.png")
+![farm game](static/farmTask.png)
 
 ### Simple Tabular Q-Learning
 The **Simple Tabular Q-Learning** approach uses a single Q-table to represent the state-action values for both agents. Key details:
